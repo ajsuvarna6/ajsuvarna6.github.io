@@ -1,45 +1,39 @@
-<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem deleniti accusantium quasi ab ad officia cupiditate sed aliquam nobis expedita velit dolorum perspiciatis pariatur nam vero et magnam soluta tempora!</div>
-<div>Eveniet deserunt consequatur porro molestiae nulla optio quis totam libero iste nemo odit eum facilis sapiente. Harum similique cupiditate voluptas ea optio sunt molestias eius ab qui obcaecati nesciunt id?</div>
-<div>Necessitatibus delectus sint vitae eos quasi optio esse dignissimos enim laborum ipsum harum perspiciatis eaque. Magnam fugiat delectus neque laboriosam in accusamus a veniam inventore asperiores consequatur nihil quae quo.</div>
-<div>Eligendi quaerat nesciunt sint nobis qui? Temporibus maiores esse molestiae hic cum culpa sed recusandae dolore sequi modi. Quos illum debitis odio consequatur voluptatum error aliquam rem similique officia recusandae.</div>
-<div>Ex suscipit earum reiciendis eaque dolorem inventore accusantium modi voluptatum saepe cum quam tempora autem corrupti illum deleniti iure rerum mollitia quo ducimus soluta ea! Illum aliquid consectetur vitae quod?</div>
-<div>Minus rem tempora quo. Deleniti mollitia dignissimos laborum quis quos facilis dolore soluta error provident recusandae veniam minus consequatur blanditiis. Facere tempore praesentium soluta fugiat quia eligendi dolores ullam doloribus!</div>
-<div>Aut nulla perferendis officiis accusamus ut aspernatur hic possimus amet blanditiis incidunt repudiandae ullam inventore ipsam recusandae nihil provident facilis totam quibusdam natus eligendi optio quia sapiente rerum quos illo?</div>
-<div>Porro soluta nisi impedit voluptatem ex accusantium facilis amet quod blanditiis quia similique totam enim id ratione minus quo modi sequi nam dicta iste aliquid itaque velit accusamus quibusdam consequuntur.</div>
-<div>Ab assumenda in ad nesciunt recusandae labore voluptates vero suscipit tenetur ullam sint beatae odio harum quo aperiam quas temporibus pariatur consectetur saepe eveniet minus voluptatem atque iusto similique repudiandae?</div>
-<div>In enim odit repellat maxime harum eum expedita fuga vel eaque quaerat optio hic sapiente eveniet neque dolorum eligendi pariatur possimus aliquid minus officiis mollitia quia voluptates sunt nulla est!</div>
-<style>
-html {
-  background: lightgrey;
-  height: 100%;
-  overflow: hidden;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UrNest</title>
+  <base href="/" />
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="manifest" href="manifest.json"></link>
+  <script type="text/javascript">
+     var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[]};
+     clevertap.account.push({"id": "K76-4RK-584Z"});
+   (function () {
+  		 var wzrk = document.createElement('script');
+  		 wzrk.type = 'text/javascript';
+  		 wzrk.async = true;
+  		 wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
+  		 var s = document.getElementsByTagName('script')[0];
+  		 s.parentNode.insertBefore(wzrk, s);
+    })();
+  </script>
+</head>
+<body>
+  <div id="app">First deployment app</div>
+</body>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('clevertap_sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }).catch(function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
 }
-body {
-  height: 100%;
-  background: whitesmoke;
-  overflow: scroll;
-  width: 80%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 3em;
-  font: 100%/1.4 serif;
-  border: 1px solid rgba(0,0,0,0.25)
-}
-p {
-  margin: 0 0 1.5em;
-}
-
-body::-webkit-scrollbar {
-    width: 7px;
-}
-
-body::-webkit-scrollbar-thumb {
-	border-radius: 4px;
-	border: 1px solid #FFF;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
-}
-</style>
+</script>
+</html>
